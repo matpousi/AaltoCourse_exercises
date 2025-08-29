@@ -39,3 +39,6 @@ jobs:
       - name: Success message
         run: |
           echo "Branch protection check passed. Push is allowed."
+
+# DOES NOT PREVENT force pushes..
+# Using GH inbuilt mechanism instead

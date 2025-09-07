@@ -51,9 +51,9 @@ def ll(theta, model, solver,data, pnames, out=1): # out=1 solve optimization, ou
     global ev
     
     # Unpack
-    x = data.x
-    d = data.d
-    dx1 = data.dx1
+    x = np.numpy(data.x)
+    d = np.numpy(data.d)
+    dx1 = np.numpy(data.dx1)
 
     # Update values
     model=updatepar(model,pnames,theta)
